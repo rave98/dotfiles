@@ -56,6 +56,10 @@ lua << ENDLUA
   })
 ENDLUA
 
+" toggle nvimtree with keyboard
+tnoremap <A-f> :NvimTreeToggle<CR>
+nnoremap <A-f> :NvimTreeToggle<CR>
+
 " VIMTEX CONF---------------------
 " This is necessary for VimTeX to load properly. The "indent" is optional.
 " Note that most plugin managers will do this automatically.
@@ -124,6 +128,10 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 " spell checker toggle
 nnoremap <F1> :set spell!<CR>
 inoremap <F1> <C-O>:set spell!<CR>
+
+" relative line numbers
+set number
+set relativenumber
 
 " no mouse
 set mouse=
